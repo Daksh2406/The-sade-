@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course</title>
+</head>
+<style>
+  /* --- Courses Section - New Styles for Accordion --- */
+.classes-title {
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #0d47a1;
+    text-align: center;
+}
+
+.classes-accordion {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    width: 100%;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 15px 20px;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    font-size: 1.15em;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+    background-color: #e0e0e0;
+}
+
+.accordion-header.active {
+    background-color: #0d47a1;
+    color: #fff;
+}
+
+.accordion-header.active i {
+    transform: rotate(180deg);
+}
+
+.accordion-header i {
+    transition: transform 0.3s;
+    font-size: 0.9em;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.accordion-content ul {
+    list-style: none;
+    padding: 15px 0 15px 20px;
+}
+
+.accordion-content ul li {
+    padding: 5px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.accordion-content h4 {
+    color: #ffb300;
+    margin: 15px 0 5px;
+    font-size: 1.1em;
+}
+</style>
+
+<body>
+  <section id="courses" class="courses container">
+    <h2 class="section-title">हमारे बोर्ड और कक्षाएँ 📚</h2>
+    <p class="section-subtitle">UP, CBSE, ICSE बोर्ड के लिए कक्षा 3 से 12 तक व्यक्तिगत शिक्षण।</p>
+
+    <div class="board-grid">
+        <div class="board-card">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>CBSE Board</h3>
+            <p>संपूर्ण *NCERT* कवरेज, अवधारणा-आधारित शिक्षा और नियमित अभ्यास।</p>
+        </div>
+        <div class="board-card">
+            <i class="fas fa-book-open"></i>
+            <h3>UP Board</h3>
+            <p>*बोर्ड पैटर्न* के अनुसार केंद्रित तैयारी, स्थानीय आवश्यकताओं और *पिछले वर्षों के पेपर* पर विशेष ध्यान।</p>
+        </div>
+        <div class="board-card">
+            <i class="fas fa-school"></i>
+            <h3>ICSE Board</h3>
+            <p>गहन सैद्धांतिक (Theoretical) समझ और विश्लेषणात्मक कौशल (Analytical skills) विकसित करने पर ज़ोर।</p>
+        </div>
+    </div>
+
+    <h3 class="classes-title">कक्षा 3 से 12 तक के पाठ्यक्रम (Subjects)</h3>
+    
+    <div class="classes-accordion">
+        
+        <div class="accordion-item">
+            <button class="accordion-header" data-class="junior">
+                कक्षा 3rd से 8th (Foundation Classes) <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <ul>
+                    <li>*मुख्य विषय:* गणित, विज्ञान, अंग्रेजी व्याकरण, हिंदी।</li>
+                    <li>*विशेषता:* मज़बूत नींव (Strong Foundation) और सीखने की आदतों का विकास।</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header" data-class="secondary">
+                कक्षा 9th और 10th (Secondary Classes) <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <ul>
+                    <li>*मुख्य विषय:* गणित (Maths), विज्ञान (Science - Physics, Chem., Bio.), सामाजिक विज्ञान, अंग्रेजी।</li>
+                    <li>*विशेषता:* बोर्ड परीक्षा की केंद्रित तैयारी और विषय-विशिष्ट विशेषज्ञता।</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header" data-class="higher-secondary">
+                कक्षा 11th और 12th (Higher Secondary/Board Exams) <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <h4>Science Stream</h4>
+                <ul>
+                    <li>*PCB/PCM:* भौतिकी (Physics), रसायन विज्ञान (Chemistry), जीव विज्ञान (Biology)/गणित (Maths).</li>
+                    <li>*फोकस:* कॉन्सेप्ट क्लैरिटी, न्यूमेरिकल प्रैक्टिस और प्रतियोगी परीक्षा का आधार।</li>
+                </ul>
+                
+                <ul>
+                    
+                    <li>*फोकस:* व्यावसायिक ज्ञान और सैद्धांतिक विषयों पर गहरी पकड़।</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<script >
+  // Accordion Functionality for Courses Section
+document.addEventListener('DOMContentLoaded', () => {
+    // Existing code for Mobile Menu and Typing Effect should be here.
+
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const content = header.nextElementSibling;
+            
+            // Toggle 'active' class on header
+            header.classList.toggle('active');
+
+            // Toggle content visibility (slide up/down effect)
+            if (content.style.maxHeight) {
+                // If content is open, close it
+                content.style.maxHeight = null;
+                content.style.padding = '0 20px'; // Reset padding when closing
+            } else {
+                // If content is closed, open it
+                // Set max-height to scrollHeight to allow transition effect
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.style.padding = '15px 20px'; // Set padding when opening
+            }
+        });
+    });
+});
+
+</script>
+</body>
+
+</html>s

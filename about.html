@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us</title>
+</head>
+<style >
+  /* --- About Us Section --- */
+.about-us {
+    padding: 80px 20px;
+    background-color: #ffffff; /* White background for clean look */
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.2em;
+    margin-bottom: 50px;
+    color: #0d47a1;
+    text-align: center;
+}
+
+.owner-profile {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.profile-image {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    border-radius: 50%; /* Circular image */
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.profile-details {
+    flex: 2;
+    padding-right: 20px;
+}
+
+.profile-details h3 {
+    font-size: 1.8em;
+    color: #0d47a1;
+    margin-bottom: 15px;
+}
+
+.manik-sir-intro {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.profile-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-details ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+.profile-details ul li i {
+    color: #ffb300; /* Yellow checkmark */
+    margin-right: 10px;
+}
+
+/* --- Features Grid --- */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.feature-card {
+    background-color: #e3f2fd; /* Light Blue */
+    padding: 30px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.feature-card:hover {
+    background-color: #0d47a1;
+    transform: translateY(-5px);
+}
+
+.feature-card:hover h4, .feature-card:hover p, .feature-card:hover i {
+    color: #fff; /* White text on hover */
+}
+
+.feature-card i {
+    font-size: 2.5em;
+    color: #ffb300;
+    margin-bottom: 15px;
+    transition: color 0.3s;
+}
+
+.feature-card h4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #0d47a1;
+    transition: color 0.3s;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .owner-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin: 0 auto 20px;
+    }
+
+    .profile-details {
+        padding-right: 0;
+    }
+
+    .profile-details ul {
+        text-align: left;
+        padding-left: 20px;
+    }
+}
+
+</style>
+
+<body>
+  <section id="about" class="about-us container">
+    <h2 class="section-title">हमारा मिशन और हमारी शक्ति</h2>
+    
+    <div class="owner-profile">
+        <div class="profile-image">
+             
+        </div>
+        <div class="profile-details">
+            <h3>🤝 मालिक: Manik Sir</h3>
+            <p class="manik-sir-intro">
+                "The Sade Tution Centre" की स्थापना *Manik Sir* ने उच्च शिक्षा के प्रति अपने गहरे जुनून (passion) और वर्षों के शिक्षण अनुभव के साथ की है। उनका मानना है कि सही मार्गदर्शन से हर छात्र अपनी पूरी क्षमता को हासिल कर सकता है।
+            </p>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> *अनुभव:* 10+ वर्षों का विशेषज्ञ शिक्षण अनुभव।</li>
+                <li><i class="fas fa-check-circle"></i> *विशेषज्ञता:* UP, CBSE, ICSE बोर्ड पाठ्यक्रम में महारत।</li>
+                <li><i class="fas fa-check-circle"></i> *व्यक्तिगत ध्यान:* प्रत्येक छात्र की सीखने की गति के अनुसार शिक्षा।</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="features-grid">
+        <div class="feature-card">
+            <i class="fas fa-lightbulb"></i>
+            <h4>स्पष्ट अवधारणाएँ (Clear Concepts)</h4>
+            <p>हम केवल रटने पर नहीं, बल्कि विषयों की गहरी समझ पर जोर देते हैं।</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-users-gear"></i>
+            <h4>छोटे बैच साइज़</h4>
+            <p>छोटे बैच सुनिश्चित करते हैं कि हर छात्र को Manik Sir से व्यक्तिगत मार्गदर्शन मिले।</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-chart-line"></i>
+            <h4>नियमित प्रगति ट्रैक</h4>
+            <p>मासिक टेस्ट, क्विज़ और विस्तृत प्रदर्शन रिपोर्ट (performance reports) के माध्यम से निरंतर प्रगति।</p>
+        </div>
+    </div>
+</section>
+
+</body>
+
+</html>
